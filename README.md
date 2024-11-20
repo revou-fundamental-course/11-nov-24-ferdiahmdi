@@ -1,0 +1,1 @@
+(-) belum responsive design

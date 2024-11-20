@@ -1,12 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/script.js" defer></script>
+    <title>Document Ferdi F Ahmadi</title>
+  </head>
+  <body>
+    <!-- container main utama -->
+    <div class="mainContainer">
+      <!-- navbar -->
+      <nav class="">
+        <div class="logo">Travel</div>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li><a href="#packages">Our Package</a></li>
+          <li><a href="#closingHeadline">Call Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- konten utama -->
+      <main>
+        <!-- tulisan atas -->
+        <div class="hero" id="home">
+          <h1>Your Trusted Travel Agent</h1>
+          <p>Your Happiness is our happiness</p>
+        </div>
+
+        <!-- isi konten utama -->
+        <div class="contentContainer">
+          <!-- konten kiri -->
+          <div class="mainContent">
+            <div class="mainContentBanner">
+              <div class="bannerContainer">
+                <img src="/img/japan.jpg" alt="" id="banner1" class="slideshow" />
+                <img src="/img/skorea.jpg" alt="" id="banner2" class="slideshow" />
+                <img src="/img/bali.jpg" alt="" id="banner3" class="slideshow" />
+                <a class="prev">&#10094</a>
+                <a class="next">&#10095</a>
+              </div>
+            </div>
+            <div class="mainContentTestimony">
+              <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+              <div class="testimonyProfile">
+                <img src="img/profile.png" alt="" />
+                <div class="profileDetails">
+                  <h3>Florence Hughes</h3>
+                  <p>Ibu Rumah Tangga, 28</p>
+                </div>
+              </div>
+            </div>
+            <div class="mainContentFeatures">
+              <h3>
+                Use this space to provide users with more information about your
+                offer. Consider it a follow-up to your headline and explain the
+                benefits of your service or product
+              </h3>
+              <div class="featuresContainer">
+                <div class="featureList">
+                  <div class="featureNumber">1</div>
+                  <div class="featureText">
+                    Your first feature, written in the form of a benefit
+                    statement
+                  </div>
+                </div>
+                <div class="featureList">
+                  <div class="featureNumber">2</div>
+                  <div class="featureText">
+                    Your second feature, written in the form of a benefit
+                    statement
+                  </div>
+                </div>
+                <div class="featureList">
+                  <div class="featureNumber">3</div>
+                  <div class="featureText">
+                    Your third feature, written in the form of a benefit
+                    statement
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- konten kanan -->
+          <div class="contactFormContainer">
+            <div class="contactForm">
+              <div class="contactHead">
+                <h2>Contact Us</h2>
+                <p>
+                  Sales akan menghubungi anda 1x24 jam setelah data kami terima
+                </p>
+              </div>
+              <div class="contactFormSubmission">
+                <div class="inputContainer">
+                  <label for="contactName">Your Name:</label>
+                  <input
+                    type="text"
+                    name="contactName"
+                    id="contactName"
+                    placeholder="First and Last Name"
+                  />
+                  <div class="inputAlert" id="nameAlert">Please fill in your name</div>
+                </div>
+                <div class="inputContainer">
+                  <label for="contactEmail">Email Address:</label>
+                  <input
+                    type="email"
+                    name="contactEmail"
+                    id="contactEmail"
+                    placeholder="example@email.com"
+                  />
+                  <div class="inputAlert" id="emailAlert">Please fill in your email with the correct format</div>
+                </div>
+                <div class="inputContainer">
+                  <label for="contactInterest"
+                    >What are you interested in?</label
+                  >
+                  <input
+                    list="interestOptions"
+                    type="text"
+                    name="contactInterest"
+                    id="contactInterest"
+                    placeholder="Interests"
+                  />
+                  <datalist id="interestOptions">
+                    <option value="Option 1"></option>
+                    <option value="Option 2"></option>
+                    <option value="Option 3"></option>
+                  </datalist>
+                  <div class="inputAlert" id="optionAlert">Please fill in with your interest</div>
+                </div>
+                <input type="button" value="SEND" id="submitContactForm" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="packages" id="packages">
+          <h1>Our Package</h1>
+          <ul>
+            <li>
+              <img src="/img/pointA.svg" alt="" />
+              <div class="packageDetails">
+                <h3>Japan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/pointA.svg" alt="" />
+              <div class="packageDetails">
+                <h3>Bali</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/pointA.svg" alt="" />
+              <div class="packageDetails">
+                <h3>South Korea</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/pointB.svg" alt="" />
+              <div class="packageDetails">
+                <h3>Japan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/pointB.svg" alt="" />
+              <div class="packageDetails">
+                <h3>Bali</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/pointB.svg" alt="" />
+              <div class="packageDetails">
+                <h3>South Korea</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  consequuntur doloribus pariatur facilis modi harum?
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="closingHeadline" id="closingHeadline">
+          <h1>Closing Headline</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+            ullam.
+          </p>
+          <input type="button" value="CALL TO ACTION" id="callButton">
+        </div>
+
+        <footer>
+          <div class="logo">Travel</div>
+          <div class="footContainer">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="footContainer">
+            <p>&copy; 2024</p>
+            <p>Travel</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
