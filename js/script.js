@@ -69,7 +69,7 @@ submitButton.addEventListener('click', () => {
   if (!nameInput || nameInput == '') {
     alertName.classList.add('alerted');
   }
-  if (!emailInput || !emailInput.includes('@')) {
+  if (!emailInput || !emailInput.includes('@') || !emailInput.includes('.com')) {
     alertEmail.classList.add('alerted');
   }
   if (!optionInput) {
